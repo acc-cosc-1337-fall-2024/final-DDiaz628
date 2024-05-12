@@ -62,3 +62,13 @@ TEST_CASE("Test Die class Roll function")
 	cout<<roll.roll()<<"\n";
 	REQUIRE(test == true);
 }
+
+TEST_CASE("Test Roll class")
+{
+	Die die1;
+	Die die2;
+	
+	Roll roll (Die& die1, Die& die2);
+	bool test;
+
+	
